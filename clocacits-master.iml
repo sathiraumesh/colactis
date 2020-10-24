@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="cloudsim-3.0.3" level="project" />
+    <orderEntry type="library" name="jmetal4.5.2" level="project" />
   </component>
 </module>
