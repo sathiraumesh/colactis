@@ -34,7 +34,6 @@
 package wsnLoc.bmopso;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -66,7 +65,6 @@ public class MainClass {
 			//out.write("Time\tLocalized Nodes\tMin Ranges\tMid Ranges\tMax Ranges\tPower Consumption\n");
 			
 			for(int i = 0 ; i < 50 ; i++){
-				System.out.println("ss");
 				PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("SimulationOutput"+ "out.txt", true)));
 				
 				System.out.println(i+1);

@@ -33,6 +33,8 @@
 
 package wsnLoc.ext;
 
+import wsnLoc.cmopso.FloodResult;
+
 import java.util.Comparator;
 
 @SuppressWarnings("rawtypes")
@@ -40,8 +42,8 @@ public class DominanceComparator implements Comparator{
 	
 	public int compare(Object o1, Object o2) {
 		
-		discFloodResult firstParticleFitness = (discFloodResult) o1;
-		discFloodResult SecondParticleFitness = (discFloodResult) o2;
+		discFloodResult firstParticleFitness =  (discFloodResult) o1;
+		discFloodResult SecondParticleFitness =  (discFloodResult) o2;
 		
 		double Particle_1_obj_1_value, Particle_1_obj_2_value;
 		double Particle_2_obj_1_value, Particle_2_obj_2_value;

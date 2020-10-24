@@ -44,9 +44,12 @@ public class MainClass {
 		
 		@SuppressWarnings("unused")
 		ZigBee_powerConsumption a = new ZigBee_powerConsumption();
+		PSOClass pso = new PSOClass();
 		
 		ArrayList<Node> nodesList = new SensorsLocations().ReadLocations("/Users/sathiraumesh/Downloads/clocacits-master/200_sensor_40_anchor_1000_area.wsnLoc");
-		//getPSONodesPowerLevels(nodesList);
+	getPSONodesPowerLevels(nodesList);
+
+		pso.run(nodesList);
 		noPSO(nodesList);
 	}
 	
@@ -69,8 +72,8 @@ public class MainClass {
 			node.sender = nodesList.get(i);
 			
 			node.range = ZigBee_powerConsumption.MaxRange;
-			//node.range = ZigBee.MidRange;
-			//node.range = ZigBee.MinRange;
+//			node.range = ZigBee_powerConsumption.MidRange;
+//			node.range = ZigBee_powerConsumption.MinRange;
 			
 			nodesToRangeList.add(node);
 		}

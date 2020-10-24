@@ -34,8 +34,8 @@
 package wsnLoc.cmopso;
 
 public class FloodResult {
-	int localizedNodesNumber;
-	int time;
-	double sumRanges;
-	double energyConsumption;
+	public int localizedNodesNumber;
+	public int time;
+	public double sumRanges;
+	public double energyConsumption;
 }
